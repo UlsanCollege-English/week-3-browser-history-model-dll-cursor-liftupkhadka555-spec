@@ -48,4 +48,7 @@ class BrowserHistory:
         while steps > 0 and self.cur and self.cur.next:
             self.cur = self.cur.next
             steps -= 1
+
+
+
         return self.cur.url if self.cur else None
